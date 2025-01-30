@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Menu Button for Mobile -->
+    <button class="menu-btn" onclick="openDrawer()">☰ Menu</button>
+
+    <!-- Drawer -->
+    <div id="myDrawer" class="drawer">
+        <span class="drawer-close" onclick="closeDrawer()">×</span>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+
     <header>
         <nav>
             <ul class="navbar">
@@ -52,5 +65,7 @@
     <footer>
         <p>&copy; 2025 Waza Wear Worldwide. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script> <!-- Link to script.js for drawer functionality -->
 </body>
 </html>
