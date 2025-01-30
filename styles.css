@@ -210,3 +210,94 @@ footer p {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px; /* Adjust hero height for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 36px; /* Reduce hero title size on mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 18px; /* Reduce subtitle font size */
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .welcome-section {
+        padding: 30px 5%;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr 1fr; /* Display two items per row */
+        gap: 15px;
+    }
+
+    .featured-item h3 {
+        font-size: 18px; /* Reduce font size for item titles */
+    }
+
+    .featured-item p {
+        font-size: 14px; /* Smaller text for descriptions */
+    }
+
+    .blog-image-grid {
+        grid-template-columns: 1fr 1fr; /* Two items per row */
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero {
+        height: 300px; /* Adjust for smaller devices */
+    }
+
+    .hero-title {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .hero-subtitle {
+        font-size: 16px; /* Smaller subtitle */
+    }
+
+    .btn-primary {
+        padding: 10px 15px;
+        font-size: 12px; /* Smaller buttons */
+    }
+
+    .welcome-section {
+        padding: 20px 5%;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+
+    .featured-item h3 {
+        font-size: 16px; /* Smaller item titles */
+    }
+
+    .featured-item p {
+        font-size: 12px; /* Smaller descriptions */
+    }
+
+    .blog-image-grid {
+        grid-template-columns: 1fr; /* One image per row */
+    }
+
+    footer p {
+        font-size: 12px; /* Smaller footer text */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
